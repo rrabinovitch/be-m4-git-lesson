@@ -17,7 +17,7 @@ class OrdersController < ApplicationController
       flash[:success] = "Order was successfully placed."
       redirect_to orders_path
     else
-      flash[:error] = "An error occured please replace your order."
+      flash[:error] = "An error occured - replace your order."
       redirect_to cart_path
     end
   end
